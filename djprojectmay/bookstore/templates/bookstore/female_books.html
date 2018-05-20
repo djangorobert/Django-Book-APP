@@ -1,0 +1,50 @@
+{% extends "bookstore/base.html" %}
+
+{% block content %}
+   
+	
+	
+
+	
+<br>
+<br>
+<br>
+	<h3>New Books Published by Great women</h3>
+
+	
+	
+	
+	
+	
+
+<table class="table">
+
+  <thead>
+
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Author:</th>
+      <th scope="col">Title:</th>
+      <th scope="col">Added:</th>
+	  <th scope="col">Rated a:</th>
+  
+ 
+	 {% for n in f %}
+</thead>
+  
+   
+      <th scope="row"></th>
+      <td>{{ n.author }}</td>
+	  <td>{{ n.title }}</td>
+      <td>{{ n.created }}</td>
+	  <td>{{ n.rating }}</td>
+    </tr>
+
+	{% endfor %}	
+  </tbody>
+</table>
+
+
+</body>
+{% endblock %}
+</html>

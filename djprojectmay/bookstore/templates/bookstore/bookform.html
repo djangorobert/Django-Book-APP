@@ -1,0 +1,15 @@
+{% extends 'bookstore/base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+  <h2>Add a Book </h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">post</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'bookstore/base.html' %}
+
+
+{% block content %}
+   
+	
+	
+
+	
+<br>
+<br>
+<br>
+	<h3>Top Rated Books with a Five Star</h3>
+
+	
+	
+	
+	
+	
+
+<table class="table">
+
+  <thead>
+
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Author</th>
+      <th scope="col">Book Title</th>
+      <th scope="col">Added</th>
+  
+ 
+	 {% for n in five %}
+</thead>
+  
+   
+      <th scope="row"></th>
+      <td>{{ n.author }}</td>
+	  <td>{{ n.title }}</td>
+      <td>{{ n.created }}</td>
+    </tr>
+
+	{% endfor %}	
+  </tbody>
+</table>
+
+
+</body>
+{% endblock %}
+</html>
