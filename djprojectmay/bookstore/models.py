@@ -4,9 +4,6 @@ from __future__ import unicode_literals
 from django.db import models
 from django.forms import ModelForm
 # Create your models here.
-class RobertManager(models.Manager):
-	def get_queryset(self):
-		return super(RobertManager, self).get_queryset().filter(author='Robert')
 	
 class GenderMaleManager(models.Manager):
 	def get_queryset(self):
